@@ -1,0 +1,10 @@
+apiVersion: v1 
+kind: ConfigMap
+metadata:
+  name: studmgmt-dbcreation-script
+data:
+  mysql_usermgmt.sql: |
+    DROP DATABASE IF EXISTS studentmanagement;
+    CREATE DATABASE studentmanagement;
+
+#this config map you can compare the same as user data. 
